@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 마케팅 실무 교육 가이드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap');
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
+        .step-active { border-left: 4px solid #4f46e5; }
+        .copy-btn:active { transform: scale(0.95); }
+        .touch-target { min-height: 44px; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed pb-24">
+
+    <header class="gradient-bg text-white py-10 px-6 shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-4 opacity-10">
+            <i class="fa-solid fa-microchip text-9xl"></i>
+        </div>
+        <div class="max-w-screen-md mx-auto relative z-10">
+            <div class="flex justify-between items-center mb-6">
+                <span class="bg-indigo-500 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-indigo-400">Hybrid Workshop</span>
+                <span class="text-indigo-300 text-xs font-bold animate-pulse"><i class="fa-solid fa-signal-stream mr-1"></i> LIVE STREAMING</span>
+            </div>
+            <h1 class="text-3xl font-extrabold mb-3 leading-tight tracking-tight">내 폰으로 끝내는<br><span class="text-indigo-400">AI 마케팅 에이전시</span></h1>
+            <p class="text-indigo-200 text-sm opacity-90 font-medium">NotebookLM & Mixboard를 활용한 브랜드 런칭 프로젝트</p>
+        </div>
+    </header>
+
+    <main class="max-w-screen-md mx-auto px-4 -mt-8 space-y-8 relative z-20">
+        
+        <section class="glass-card rounded-3xl p-6 shadow-2xl border border-white/50">
+            <h3 class="text-lg font-extrabold mb-5 flex items-center gap-2 text-indigo-900">
+                <i class="fa-solid fa-sun text-amber-500 text-xl"></i> 오전: AI 인사이트 & 비전 (2H)
+            </h3>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="flex items-start gap-4 p-4 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="bg-white p-3 rounded-xl shadow-sm"><i class="fa-solid fa-brain text-indigo-600"></i></div>
+                    <div>
+                        <p class="text-sm font-bold text-slate-800">AI 패러다임의 변화</p>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">단순 검색에서 '생성'과 '추론'으로의 변화, 미래 마케팅의 핵심인 'AI 에이전트' 이해하기</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="bg-white p-3 rounded-xl shadow-sm"><i class="fa-solid fa-chart-line text-indigo-600"></i></div>
+                    <div>
+                        <p class="text-sm font-bold text-slate-800">실전 마케팅 활용 범위</p>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">데이터 기반 초개인화 광고, 실시간 트렌드 분석 및 자동화된 멀티미디어 콘텐츠 제작 사례</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="bg-indigo-600 rounded-3xl p-6 text-white shadow-xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-xl font-extrabold mb-3 italic">TODAY'S MISSION</h3>
+                    <p class="text-sm text-indigo-50 text-slate-200 leading-relaxed mb-4">
+                        "제시된 시장 데이터를 노트북LM으로 분석하여 브랜드 전략을 세우고, 믹스보드와 제미나이를 이용해 1시간 안에 가상의 마케팅 제안서를 런칭하세요."
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="bg-indigo-500/50 text-[10px] px-2 py-1 rounded-md border border-indigo-400">#1인에이전시</span>
+                        <span class="bg-indigo-500/50 text-[10px] px-2 py-1 rounded-md border border-indigo-400">#모바일퍼스트</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-rocket absolute -bottom-4 -right-4 text-8xl text-indigo-500/20 rotate-12"></i>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-lg font-extrabold px-2 flex items-center gap-2">
+                    <i class="fa-solid fa-diagram-project text-indigo-600"></i> 마케팅 실무 프로세스 (SOP)
+                </h3>
+                <div class="flex flex-col gap-3">
+                    <div class="glass-card p-5 rounded-2xl flex items-center justify-between border-l-4 border-l-blue-500 shadow-sm">
+                        <div>
+                            <span class="text-[10px] font-bold text-blue-500 uppercase tracking-wider">Step 01. Discovery</span>
+                            <h4 class="font-bold text-slate-800 text-md mt-1">시장 분석 및 타겟팅 전략</h4>
+                        </div>
+                        <div class="text-blue-100"><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center justify-between border-l-4 border-l-pink-500 shadow-sm">
+                        <div>
+                            <span class="text-[10px] font-bold text-pink-500 uppercase tracking-wider">Step 02. Identity</span>
+                            <h4 class="font-bold text-slate-800 text-md mt-1">브랜드 무드 및 비주얼 확립</h4>
+                        </div>
+                        <div class="text-pink-100"><i class="fa-solid fa-palette text-2xl"></i></div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center justify-between border-l-4 border-l-indigo-500 shadow-sm">
+                        <div>
+                            <span class="text-[10px] font-bold text-indigo-500 uppercase tracking-wider">Step 03. Creative</span>
+                            <h4 class="font-bold text-slate-800 text-md mt-1">콘텐츠 제작 및 제안서 완성</h4>
+                        </div>
+                        <div class="text-indigo-100"><i class="fa-solid fa-clapperboard text-2xl"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-8">
+            <h3 class="text-lg font-extrabold px-2 flex items-center gap-2">
+                <i class="fa-solid fa-microchip text-indigo-600"></i> 단계별 AI 실습 가이드
+            </h3>
+
+            <!-- 1. NotebookLM -->
+            <div class="glass-card rounded-3xl overflow-hidden border-t-8 border-t-blue-600 shadow-lg">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-bold bg-blue-100 text-blue-700 px-3 py-1 rounded-full">STRATEGY</span>
+                            <h4 class="text-2xl font-black mt-2 tracking-tight text-slate-800">NotebookLM</h4>
+                        </div>
+                        <a href="https://notebooklm.google.com" target="_blank" class="bg-blue-600 text-white p-2 rounded-full shadow-lg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed font-medium">제공된 마케팅 트렌드 PDF를 학습시켜 '우리 브랜드가 공략해야 할 니치마켓'과 '핵심 소구점'을 도출하세요.</p>
+                    <div class="bg-blue-50 p-5 rounded-2xl space-y-3 border border-blue-100">
+                        <p class="text-[10px] font-bold text-blue-400 uppercase tracking-widest">Copy Prompt</p>
+                        <p id="prompt1" class="text-xs text-blue-900 leading-relaxed font-mono">업로드한 마케팅 보고서를 기반으로, [분야] 시장의 타겟 고객이 느끼는 고질적인 Pain Point 3가지를 정리하고, 이를 해결할 브랜드 슬로건을 제안해줘.</p>
+                        <button onclick="copyText('prompt1')" class="copy-btn w-full bg-blue-600 text-white text-xs py-3 rounded-xl font-bold shadow-lg transition-all">프롬프트 복사</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Mixboard -->
+            <div class="glass-card rounded-3xl overflow-hidden border-t-8 border-t-pink-500 shadow-lg">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-bold bg-pink-100 text-pink-700 px-3 py-1 rounded-full">VISUAL</span>
+                            <h4 class="text-2xl font-black mt-2 tracking-tight text-slate-800">Mixboard</h4>
+                        </div>
+                        <a href="https://labs.google.com/mixboard" target="_blank" class="bg-pink-500 text-white p-2 rounded-full shadow-lg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed font-medium">노트북LM이 정해준 전략 키워드를 입력하여 브랜드의 컬러와 분위기를 결정하고 무드보드를 만드세요.</p>
+                    <div class="bg-pink-50 p-5 rounded-2xl border border-pink-100">
+                        <p class="text-[10px] font-bold text-pink-400 mb-3 uppercase tracking-widest">실습 미션</p>
+                        <ul class="text-[11px] text-pink-800 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle opacity-50"></i> 메인 컨셉 키워드 3개 입력</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle opacity-50"></i> 생성된 무드보드 캡처 (갤러리 저장)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle opacity-50"></i> 제안된 메인 컬러 HEX 코드 메모</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Gemini & Canva -->
+            <div class="glass-card rounded-3xl overflow-hidden border-t-8 border-t-indigo-600 shadow-lg">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-bold bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">CREATIVE</span>
+                            <h4 class="text-2xl font-black mt-2 tracking-tight text-slate-800">Gemini & Canva</h4>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://gemini.google.com" target="_blank" class="bg-indigo-600 text-white px-3 py-1 rounded-full text-[10px] font-bold">Gemini</a>
+                            <a href="https://www.canva.com" target="_blank" class="bg-slate-800 text-white px-3 py-1 rounded-full text-[10px] font-bold">Canva</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed font-medium">제미나이로 고품질 제품 이미지를 생성하고 캔바에서 믹스보드 컬러를 적용해 카드뉴스를 완성합니다.</p>
+                    <div class="bg-indigo-50 p-5 rounded-2xl space-y-3 border border-indigo-100">
+                        <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest">Creative Prompt</p>
+                        <p id="prompt2" class="text-xs text-indigo-900 leading-relaxed font-mono">믹스보드에서 확정된 [색상]과 [분위기]를 반영한 [제품명] 인스타그램 광고 이미지를 그려줘. 비율은 9:16으로 해줘.</p>
+                        <button onclick="copyText('prompt2')" class="copy-btn w-full bg-indigo-600 text-white text-xs py-3 rounded-xl font-bold shadow-lg transition-all">프롬프트 복사</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-full shadow-2xl">
+                <span class="animate-ping w-2 h-2 bg-green-400 rounded-full"></span>
+                <span class="text-xs font-bold uppercase tracking-tighter">Live Collaboration Board</span>
+            </div>
+            <div class="space-y-3">
+                <p class="text-sm font-bold text-slate-800">오늘의 모든 결과물을 디지털 활동지에 제출하세요.</p>
+                <p class="text-xs text-slate-400">대면과 비대면 동료들의 작품이 실시간으로 공유됩니다.</p>
+            </div>
+            <a href="https://padlet.com/kissimi7979/padlet-bhq3w6dqxgbx13sd" target="_blank" 
+               class="block w-full bg-indigo-600 text-white font-black py-6 rounded-[2rem] text-xl shadow-[0_20px_50px_rgba(79,70,229,0.3)] active:scale-95 transition-all">
+                활동지(Padlet) 바로가기 <i class="fa-solid fa-up-right-from-square ml-2"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer Menu -->
+    <footer class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md glass-card border border-slate-200/50 py-3 px-8 rounded-full flex justify-between items-center text-[10px] font-bold text-slate-400 shadow-2xl z-50">
+        <div class="text-center text-indigo-600 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <i class="fa-solid fa-house block text-xl mb-1"></i>
+            <span>HOME</span>
+        </div>
+        <div class="text-center cursor-pointer" onclick="document.querySelector('#prompt1').scrollIntoView({behavior: 'smooth'})">
+            <i class="fa-solid fa-terminal block text-xl mb-1"></i>
+            <span>PROMPT</span>
+        </div>
+        <div class="text-center cursor-pointer" onclick="alert('질문은 오픈채팅방에 남겨주세요!')">
+            <i class="fa-solid fa-circle-question block text-xl mb-1"></i>
+            <span>Q&A</span>
+        </div>
+    </footer>
+
+    <script>
+        function copyText(id) {
+            const text = document.getElementById(id).innerText;
+            const tempElem = document.createElement('textarea');
+            tempElem.value = text;
+            document.body.appendChild(tempElem);
+            tempElem.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempElem);
+            
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "복사 완료! ✅";
+            btn.classList.replace('bg-blue-600', 'bg-green-600');
+            btn.classList.replace('bg-indigo-600', 'bg-green-600');
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.replace('bg-green-600', 'bg-blue-600');
+                btn.classList.replace('bg-green-600', 'bg-indigo-600');
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>
